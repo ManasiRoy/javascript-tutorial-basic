@@ -178,10 +178,32 @@ const ninjas = [
     }
 ]
 const NinjaList = ninjas.filter((nlist) => {
+    console.log(nlist.name, nlist.age);
     return nlist;
+  })
+
+const xyz = [
+    {
+        Name: "Mark",
+        Age: 33
+    },
+    {
+        Name: "Markk",
+        Age: 55
+    },
+    {
+        Name: "Markkk",
+        Age: 66
+    }
+]
+const mnop = xyz.filter((v) => {
+    return v
 })
+
+console.log(mnop);
+
 // const NinjaList = ninjas.filter(nlist => nlist)
-console.log(NinjaList);
+
 
 
 // Switch Case =================================================
@@ -240,12 +262,6 @@ console.log(NormalArrow())
     const Details = new Function('name', 'age', `this.name = name; this.age = age;`)
     const Mark = new Details('Mark', 35)
     console.log(Mark.name);
-
-
-
-
-
-
 
 
 
